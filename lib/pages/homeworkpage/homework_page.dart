@@ -28,12 +28,19 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.network(
-              "https://static.vecteezy.com/system/resources/previews/002/737/799/original/online-registration-illustration-concept-free-vector.jpg"),
+            "https://img.freepik.com/free-vector/cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37328.jpg",
+            height: 280,
+            width: 400,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           const Center(
             child: Text(
               "Welcome back!", textAlign: TextAlign.center,
               style: TextStyle(
-                  fontSize: 32,
+                  fontSize: 30,
                   color: Colors.black,
                   fontWeight: FontWeight.w700),
               // textAlign: TextAlign.center,
@@ -51,7 +58,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 15,
           ),
           Form(
             key: _globalKey,
@@ -146,18 +153,17 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                   ],
                 ),
                 const SizedBox(
-                  height: 18,
+                  height: 15,
                 ),
                 InkWell(
                   onTap: () {
-                    debugPrint("TAP TAP");
                     _globalKey.currentState!.validate();
                   },
                   child: Ink(
                     child: Container(
                       alignment: Alignment.center,
                       width: 220,
-                      height: 60,
+                      height: 55,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade900,
                         borderRadius: BorderRadius.circular(30),
@@ -170,7 +176,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 16,
                 ),
                 Text(
                   "Or connect using",
@@ -183,7 +189,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 10,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
